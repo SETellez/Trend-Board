@@ -166,7 +166,7 @@ const fetchWeather = async () => {
 
   try {
     const data = await $fetch(
-      `http://localhost:3000/weather?city=${encodeURIComponent(city)}`
+      `https://trend-board-production.up.railway.app/weather?city=${encodeURIComponent(city)}`
     )
     weatherData.value = data
   } catch (err) {
